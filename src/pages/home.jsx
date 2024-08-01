@@ -40,7 +40,8 @@ function Home() {
             {submitted ? (
                 <div className='submitted'>
                     <h2>Merci pour votre inscription !</h2>
-                    <Link to="/video" className='nav-link'>Clique ici pour voir le programme</Link>
+                    <a href="https://www.notion.so/Guide-Gratuit-E-com-aaf094cece044c6f854819edb3ecca48?pvs=4" className='nav-link'>Clique ici accéder au guide gratuit</a>
+                    <a href="#" className='nav-link'>Clique ici pour voir la vidéo</a>
                 </div>
             ) : (
             <form onSubmit={handleSubmit} className="input">
