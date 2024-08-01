@@ -33,7 +33,7 @@ function Home() {
         <div>
         <div className="home">
             <img src={Gicon} alt="Icon de la marque" />
-            <h1>Rempli tes informations pour accéder à la vidéo qui va te faire passer de zéro à 5000 € en moins de 30 jours</h1>
+            <h1>Remplis tes informations pour accéder à la vidéo qui va te faire passer de zéro à 5000 € en moins de 30 jours</h1>
             
             <form onSubmit={handleSubmit} className="input">
                 <input 
