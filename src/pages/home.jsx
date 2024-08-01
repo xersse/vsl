@@ -40,7 +40,7 @@ function Home() {
                 <div className='submitted'>
                     <h2>Merci pour votre inscription !</h2>
                     <a href="https://www.notion.so/Guide-Gratuit-E-com-aaf094cece044c6f854819edb3ecca48?pvs=4" className='nav-link'>Clique ici accéder au guide gratuit</a>
-                    <a href="#" className='nav-link'>Clique ici pour voir la vidéo</a>
+                    <a href="https://www.skool.com/genesis-ecom-5607/about" className='nav-link'>Clique ici pour voir la vidéo</a>
                 </div>
             ) : (
             <form onSubmit={handleSubmit} className="input">
