@@ -3,7 +3,6 @@ import { useState } from 'react';
 import Gicon from "../assets/gicon.JPG";
 import Footer from '../components/footer';
 import './home.css';
-import { Link } from 'react-router-dom';
 
 function Home() {
     const [firstName, setFirstName] = useState('');
@@ -35,8 +34,8 @@ function Home() {
         <div>
         <div className="home">
             <img src={Gicon} alt="Icon de la marque" />
-            <h1>Cette vidéo peut de faire encaisser 5000€ en moins de 30 jours si tu l&apos;écoutes attentivement</h1>
-            <h3>Entre t&apos;es information pour d&apos;écouvrire la méthode que nous utilisons et démare t&apos;on guide gratuit</h3>
+            <h1>Cette vidéo peut te faire encaisser 5000€ en moins de 30 jours si tu l&apos;écoutes attentivement</h1>
+            <h3>Entre tes informations pour découvrir la méthode que nous utilisons et démarre ton guide gratuit</h3>
             {submitted ? (
                 <div className='submitted'>
                     <h2>Merci pour votre inscription !</h2>
