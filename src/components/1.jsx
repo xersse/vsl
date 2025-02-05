@@ -1,7 +1,8 @@
 
+import Button from './button';
 import './1.css';
 
-function Footer() {
+function One() {
   return (
     <>
         <p className='title'>
@@ -13,13 +14,9 @@ function Footer() {
         <div className='img'>
             <img src="https://d1yei2z3i6k35z.cloudfront.net/8869040/66b78a7d37ce6_img.png" alt="image qui prouve tous " />
         </div>
-        <div className='button'>
-            <button>
-                <strong>ACCÉDER À NOTRE MÉTHODE GRATUITEMENT</strong>
-            </button>
-        </div>
+        <Button />
     </>
   );
 }
 
-export default Footer;
+export default One;

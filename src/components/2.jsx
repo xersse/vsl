@@ -1,7 +1,8 @@
 
 import './2.css';
+import Button from './button';
 
-function Footer() {
+function Two() {
   return (
     <>
         <p className='title2'>
@@ -37,13 +38,9 @@ function Footer() {
                 <p>Profitez de ressources et d’outils professionnels pour simplifier votre gestion de boutique.</p>
             </div>
         </div>
-        <div className='button'>
-            <button>
-                <strong>ACCÉDER À NOTRE MÉTHODE GRATUITEMENT</strong>
-            </button>
-        </div>
+        <Button />
     </>
   );
 }
 
-export default Footer;
+export default Two;

@@ -1,0 +1,236 @@
+
+.button{
+    margin-top: 20px;
+    background-color: #dbbe7D;
+    font-size: 20px;
+    font-family: Poppins;
+    color: #000;
+    height: 60px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover{
+    transform: scale(0.99);
+    box-shadow: 0 8px 32px 0 #deb87163;
+    filter: drop-shadow(0 0 0.75rem #deb8717e);
+}
+
+
+@media screen and (max-width: 490px){
+    .button{
+        width: 200px;
+    } 
+}
+
+@media screen and (min-width: 490px){
+    .button{
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 650px){
+    .button{
+        width: 630px;
+    }
+}
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+
+  .modal-content {
+    background: #000;
+    padding: 20px;
+    border-radius: 20px;
+    width: 600px;
+    position: relative;
+    text-align: center;
+    border: 1px solid #dbbe7D;
+    box-shadow: 0 8px 32px 0 #deb87163;
+    filter: drop-shadow(0 0 0.75rem #deb8717e);
+  }
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #dbbe7D;
+  }
+  
+  .close-button:hover {
+    color: red;
+  }
+  
+
+.titleModal{
+    color: #fff;
+    font-size: 35px;
+    font-family: Poppins;
+}
+
+.subtitleModal{
+    color: #fff;
+    font-size: 20px;
+    font-family: Poppins;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -20px;
+}
+
+.send    { 
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+  }
+  
+  .send input         {
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:300px;
+    border:none;
+    border-bottom:1px solid #dbbd7d7d;
+  }
+  .send input:focus     { outline:none; }
+  
+  .send label          {
+    color: #999; 
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+    
+  }
+  
+  .send input:focus ~ label, .send input:valid ~ label    {
+    top:-20px;
+    font-size:14px;
+    color:#999;
+  }
+  
+  .bar  { position:relative; display:block; width:300px; }
+  .bar:before, .bar:after   {
+    content:'';
+    height:2px; 
+    width:0;
+    bottom:1px; 
+    position:absolute;
+    background: #dbbe7D; 
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  .bar:before {
+    left:50%;
+  }
+  .bar:after {
+    right:50%; 
+  }
+  
+  .send input:focus ~ .bar:before, .send input:focus ~ .bar:after {
+    width:50%;
+  }
+  
+  .highlight {
+    position:absolute;
+    height:60%; 
+    width:100px; 
+    top:25%; 
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+  }
+
+  .send input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+  }
+  
+  .group{
+      position:relative; 
+      margin-bottom:45px;
+      width: 300px;
+      overflow-x: clip;
+  }
+  
+  .group a{
+      color: #999;
+  }
+  
+  .input_mail{
+      background-color: rgba(255, 255, 255, 0);
+      color: #ffffff;
+  }
+  
+  .input_password{
+      background-color: rgba(255, 255, 255, 0);
+      color: #ffffff;
+  }
+  
+  .input_submit-send{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border);
+    background-color: transparent;
+    cursor: pointer;
+    width: 300px;
+    height: 40px;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.2s;
+  }
+  
+  .input_submit-send:hover{
+    transform: scale(0.95);
+    background-color: var(--gris-bg);
+    box-shadow: 0 8px 32px 0 rgba(123, 123, 125, 0.37);
+    filter: drop-shadow(0 0 0.75rem var(--shadow));
+    border: 1px solid rgba(255, 255, 255, 0.329);
+  }
+
+.send button{
+    width: 300px;
+    background-color: #dbbe7D;
+    border-radius: 20px;
+    height: 50px;
+    font-size: 24px;
+    font-family: Poppins;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.send button:hover{
+    transform: scale(0.99);
+    box-shadow: 0 8px 32px 0 #deb87163;
+    filter: drop-shadow(0 0 0.75rem #deb8717e);
+}
