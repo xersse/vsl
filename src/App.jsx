@@ -2,9 +2,6 @@
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Home from './pages/home1';
-import Video from './pages/vidéo';
-import Admin from './pages/admin';
-import Login from './components/loginAdmin';
 import E404 from './pages/404';
 import './App.css';
 
@@ -37,14 +34,6 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/video" element={<Video />} />
-            <Route path="/login" element={<Login setAuthenticated={setAuthenticated} />} />
-            <Route
-            path="/admin"
-            element={
-              authenticated ? <Admin /> : <Navigate to="/login" />
-            }
-            />
             <Route path="*" element={<E404 />} />
           </Routes>
         </main>

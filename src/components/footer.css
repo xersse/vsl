@@ -1,10 +1,46 @@
 footer{
     margin-top: 350px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
-    height: 60px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #cccccc46;
     text-align: center;
+    color: #fff;
+}
+
+@media screen and (max-width: 380px){
+    footer{
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 380px){
+    footer{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 520px){
+    footer{
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 675px){
+    footer{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 950px){
+    footer{
+        width: 125%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    footer{
+        width: 160%;
+    }
 }

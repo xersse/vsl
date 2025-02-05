@@ -1,6 +1,8 @@
 
 import { useState } from 'react';
 import Gicon from "../assets/gicon.JPG";
+import One from '../components/1';
+import Two from '../components/2'
 import Footer from '../components/footer';
 import './home.css';
 
@@ -33,28 +35,11 @@ function Home() {
         <div>
         <div className="home">
             <img src={Gicon} alt="Icon de la marque" />
-            <h1>Remplis tes informations pour accéder à la vidéo qui va te faire passer de zéro à 5000 € en moins de 30 jours</h1>
-            
-            <form onSubmit={handleSubmit} className="input">
-                <input 
-                type="text" 
-                name="firstName" 
-                placeholder="Prénom" 
-                value={firstName}
-                onChange={(e) => setFirstName(e.target.value)}
-                />
-                <input 
-                type="email" 
-                name="mail" 
-                placeholder="Email" 
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                />
-                <button type='submit'>J&apos;accéde à la vidéo dès maintenant</button>
-            </form>
-            
+            <One />
+            <Two />
+            <Footer />
         </div>
-        <Footer />
+        
         </div>
     );
 }
